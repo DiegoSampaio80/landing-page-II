@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+Body{
+    height: 100%;
+    font-family: Raleway,sans-serif;
+    color: rgb(99, 29, 203);
+    
+}
+header{
+    background-color: rgb(99, 220, 63);
+    height: 100px;
+    display: flex;
+    
+}
+header img{
+    position: absolute;
+    width: 100px;
+    height: 98px;
+    
+}
+h1{
+    padding-top: 33px;
+    padding-left: 100px;
+    
+}
+.navBar{
+    margin-left: 50px;
+    line-height: 110px;
+    width: 850px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding-left: 20px;
+    cursor: pointer;
+    
+}
+.navBar, a{
+    justify-content: space-between;
+    text-decoration: none;
+    /* border: 2px solid red;  */
+}
+nav #search{
+    margin-top: 38px;
+    
+}
+#global{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: contain;
+    background-image: url(../landing-page-II/green-friday-background-cub.jpg);
+    height: 70vh;
+   
+}
+#form{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px ;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: auto;
+    margin-top: 55px;
+   
+}
+h2{
+    margin: auto;
+    padding: 15px 0px 13px 17px;
+    text-align: justify;
+ 
+}
+h4{
+    margin: auto;
+    padding: 10px 20px 10px 17px;
+    text-align: justify;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    
+}  
+input{
+    margin: 7px 0px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(146, 145, 145);
+    height: 35px;
+    
+}
+.btn{
+    background-color: #8c52e5;
+    color: #fff;
+    border: 10px solid #8c52e5;
+    height: 40px;
+}
+footer{
+    margin-top: 438px;
+    height: 119px;
+    background-color: rgb(99, 220, 63);   
+}
+h3{
+    padding: 0px 22px;
+}
+#footer{
+    width: 1325px;
+    height: 100px;
+    padding: 0px 10px;
+}
+#footer, h3, iframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;   
+}
+.parceiro img{
+    width: 100px;
+    height: 50px;
+    padding: 0px 6px;
+    border-radius: 50px;
+  
+}
+.redesSociais{
+    margin: 0px 30px;
+    padding-left: 0px 30px;
+}
+.icons{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.redesSociais a{
+   margin: 10px;
+    
+}
+iframe{
+    position: relative;
+    height: 75px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 112px;
+}
+h6{
+    position: absolute;
+    margin-left: 550px;
+    display: inline;
+    margin-top: -11px;
+}

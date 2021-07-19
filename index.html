@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../landing-page-II/style.css">
+    <!-- <script type="text/JavaScript" src="../js/form.js"></script> -->
+    <title>Desafio Lading Page</title>
+</head>
+<body>
+    <header role="banner">
+        <img src="../landing-page-II/green-logo-gama-purple.jpg" alt="logo da Gama Academy" title="Gama Academy">
+        <h1>Gama Academy</h1>
+        <nav role="navigation" aria-level="site navigation" summary="opções de do site para conhcer a empresa e escolher produtos e serviços">
+            <div role="menu" class="navBar">
+                <a href="#somos" role="menuitem">Quem somos</a>
+                <a href="#missao" role="menuitem">Missão</a>
+                <a href="#cursos" role="menuitem">Cursos</a>
+                <a href="#Contato" role="menuitem">Contato</a>
+                <input type="search" name="search" id="search" placeholder="Busca &#9935" role="searchbox">
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div id="global">
+            <section>
+                <div id="form">
+                    <div id="transformation">
+                        <h2>Green Friday</h2>
+                        <!-- <h4>Ao optar pela sua transformação receba de brinde um curso de programação.</h4> -->
+                        <h4>Na busca da sua transformação receba um curso de programação.</h4>
+                        <form action="#" method="POST" role="form">
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" role="textbox">
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" role="textbox">
+                            <input type="submit" class="btn" value="Enviar" onclick="" role="button"
+                                aria-label="envie seus dados para iniciar sua trilha do conhecimento com a Gama Academy">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <div id="footer">
+            <div class="parceiro">
+                <h3>Parceiro</h3>
+                <a href="https://vtex.com/br-pt/" target="_blank"><img class="parceiros" src="../landing-page-II/vtex.png"
+                        alt="logo da empresa VTEX"></a>
+            </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.115088995126!2d-46.6844945!3d-23.5674101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb742db44a55ce752!2sGama%20Academy!5e0!3m2!1spt-BR!2sbr!4v1626484831984!5m2!1spt-BR!2sbr"
+                style="border-radius: 5px;" allowfullscreen="" loading="lazy"  title="address localization Gama Academy">
+            </iframe>
+            <div class="redesSociais">
+                <h3>Redes sociais</h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/gamaacademybr" target="_blank" class="rede w-inline-block"><img
+                            src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ff8f42d0e826ac305953bcb_facebook-logo.png"
+                            loading="lazy" alt="icon link Facebook Gama Academy" role="link"></a>
+                    <a href="https://www.linkedin.com/school/10517723/admin/" target="_blank"
+                        class="rede w-inline-block" role="link"><img
+                            src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ff8f42e27d340b65ffbf59e_LinkedIn.png"
+                            loading="lazy" width="14" alt="icon link LinkedIn Gama Academy"></a>
+                    <a href="https://www.instagram.com/gamaacademy/" target="_blank" class="rede w-inline-block"><img
+                            src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ff8f42e63870f0392e30c72_instagram-logo.png"
+                            loading="lazy" alt="icon link Instagram Gama Academy"role="link"></a>
+                    <a href="https://twitter.com/gamaacademybr" target="_blank" class="rede w-inline-block"><img
+                            src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ff8f42e0e826a0410953bcc_twitter-logo.png"
+                            loading="lazy" alt="icon link Twitter Gama Academy"role="link"></a>
+                </div>
+            </div>
+
+        </div>
+        <h6>&#169 Desafio Hiring Coders - Gama Academy e VTEX</h6>
+    </footer>
+    <script>
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            console.log(nome, email);
+
+            let data = {
+                nome,
+                email,
+            } 
+            
+            let convertData = JSON.stringify(data);
+
+            localStorage.setItem('lead', convertData);
+
+            let transformation = document.getElementById('transformation');
+            let carregando = "<p>Carregando...</p>";
+            transformation.innerHTML = "<img src=\"../image/green-friday-casulo-amarelo.jpg\" width=\"300px\" height=\"200px\" style = borderRadius: \"5px\">" +
+            "<p>Parabéns!<br>" +
+            " Você deu o primeiro passo para sua transformação.</p>";
+        })
+    </script>
+</body>
+
+</html>
